@@ -1,0 +1,31 @@
+###
+
+GET http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:9000/api/users/637bf7ada3a380c4872373f4 HTTP/1.1
+Content-Type: application/json
+
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "freyna",
+    "age": 30,
+    "email": "freyna@cne.gob.sv"
+}
+
+###
+PUT http://localhost:9000/api/users/637bf7ada3a380c4872373f4 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "jreyna",
+    "age": 30,
+    "email": "jreyna@cne.gob.sv"
+}
+
+###
+DELETE http://localhost:9000/api/users/637bf7ada3a380c4872373f4 HTTP/1.1
